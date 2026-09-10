@@ -7,4 +7,6 @@ class Solution {
 
             result[index] = nums[i];
             index++;
-
+            result[index] = nums[i + n];
+            index++;
+        }
