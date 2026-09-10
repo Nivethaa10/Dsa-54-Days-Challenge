@@ -5,7 +5,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
 
-            result[index] = nums[i];
+            result[indexs] = nums[i];
             index++;
             result[index] = nums[i + n];
             index++;
