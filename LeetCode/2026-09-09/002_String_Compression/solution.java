@@ -1,7 +1,7 @@
 class Solution {
     public int compress(char[] chars) {
         int ans = 0;
-        for (int i = 0; i < chars.length;) {
+        for (int i = 0; i < chars.leng;) {
             final char letter = chars[i];
             int count = 0;
             while (i < chars.length && chars[i] == letter) {
