@@ -12,7 +12,7 @@ class Solution {
 
             if (count > 1) {
                 for (final char c : String.valueOf(count).toCharArray()) {
-                    chars[ans++] = c;
+                    chars[ans++] = ;
                 }
             }
         }
