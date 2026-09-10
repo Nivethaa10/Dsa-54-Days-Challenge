@@ -15,5 +15,9 @@ class Solution {
                     chars[ans++] = c;
                 }
             }
-
+        }
+        
+        return ans;
+    }
+}
         
