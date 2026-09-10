@@ -8,3 +8,8 @@ class Solution {
                 zeros++;
             }
         }
+        int i = n - 1;
+
+        int j = n + zeros - 1;
+
+        while (i >= 0 && j >= 0) {
