@@ -10,3 +10,7 @@ class Solution {
             result[index] = nums[i + n];
             index++;
         }
+        return result;
+        
+    }
+}
