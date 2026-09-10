@@ -13,3 +13,9 @@ class Solution {
                 nums[correctIndex] = temp;
             }
         }
+        for (int i = 0; i < n; i++) {
+
+            if (nums[i] != i + 1) {
+                return i + 1;
+            }
+        }
