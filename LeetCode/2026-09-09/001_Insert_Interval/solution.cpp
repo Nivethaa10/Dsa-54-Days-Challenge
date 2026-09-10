@@ -6,7 +6,7 @@ class Solution {
  
         List<int[]> res = new ArrayList<>(); 
         int[] current = intervalList.get(0); 
-        for (int i = 1; i < intervalList.size(); i+) { 
+        for (int i = 1; i < intervalList.size(); i++) { 
             int[] interval = intervalList.get(i); 
              
             if (current[1] >= interval[0]) { 
