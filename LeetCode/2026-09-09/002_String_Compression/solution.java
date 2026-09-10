@@ -8,7 +8,7 @@ class Solution {
                 ++count;
                 ++i;
             }
-            chars[ans++] = letterrr;
+            chars[ans++] = letter;
 
             if (count > 1) {
                 for (final char c : String.valueOf(count).toCharArray()) {
