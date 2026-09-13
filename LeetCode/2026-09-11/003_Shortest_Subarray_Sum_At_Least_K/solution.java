@@ -13,3 +13,6 @@ class Solution {
                 startIdxs.pollLast();
             startIdxs.add(i);
         }
+        return shortest <= nLen ? shortest : -1;
+    }
+}
