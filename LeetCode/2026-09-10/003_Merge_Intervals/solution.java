@@ -6,3 +6,10 @@ class Solution {
         for (int i = 1; i < intervals.length; i++) {
             if (intervals[i][0] <= prev[1]) {
                 prev[1] = Math.max(prev[1], intervals[i][1]);
+            } else {
+                merged.add(prev);
+                prev = intervals[i];
+            }
+        }
+
+        merged.add(prev);
