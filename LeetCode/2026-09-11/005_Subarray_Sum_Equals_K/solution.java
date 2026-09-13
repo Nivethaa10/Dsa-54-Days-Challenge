@@ -10,3 +10,4 @@ class Solution {
                 count += subNum.get(total - k);
             }
             subNum.put(total, subNum.getOrDefault(total, 0) + 1);
+        }
