@@ -12,3 +12,12 @@ class Solution {
             merged[k++] = nums2[i];
         }
         Arrays.sort(merged);
+        int total = merged.length;
+
+        if (total % 2 == 1) {
+            return (double) merged[total / 2];
+        } else {
+            int middle1 = merged[total / 2 - 1];
+            int middle2 = merged[total / 2];
+            return ((double) middle1 + (double) middle2) / 2.0;
+        }
