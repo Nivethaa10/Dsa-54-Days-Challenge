@@ -21,3 +21,5 @@ class Solution {
             int middle2 = merged[total / 2];
             return ((double) middle1 + (double) middle2) / 2.0;
         }
+    }
+}
