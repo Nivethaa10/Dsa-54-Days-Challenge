@@ -5,3 +5,4 @@ class Solution {
             maxWeight = Math.max(maxWeight, weight);
             totalWeight += weight;
         }
+        int left = maxWeight, right = totalWeight;
