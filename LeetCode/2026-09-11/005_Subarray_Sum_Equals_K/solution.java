@@ -9,3 +9,4 @@ class Solution {
             if (subNum.containsKey(total - k)) {
                 count += subNum.get(total - k);
             }
+            subNum.put(total, subNum.getOrDefault(total, 0) + 1);
