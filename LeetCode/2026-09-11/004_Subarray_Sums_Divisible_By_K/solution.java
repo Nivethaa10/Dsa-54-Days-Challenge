@@ -18,3 +18,7 @@ class Solution {
             }
 
         }
+        return count;
+        
+    }
+}
