@@ -9,3 +9,5 @@ class Solution {
         for(int i=0; i < nLen + 1; i++){
             while(!startIdxs.isEmpty() && prefixSum[i] - prefixSum[startIdxs.peek()] >= k)
                 shortest = Math.min(shortest, i - startIdxs.poll());
+            while(!startIdxs.isEmpty() && prefixSum[i] <= prefixSum[startIdxs.peekLast()])
+                startIdxs.pollLast();
