@@ -17,3 +17,8 @@ class Solution {
 
     public boolean canFinish(int[] piles, int h, int k) {
         long hours = 0;
+        for (int pile : piles) {
+            hours += pile / k;
+            if (pile % k != 0) hours++;
+        }
+        return hours <= h;
