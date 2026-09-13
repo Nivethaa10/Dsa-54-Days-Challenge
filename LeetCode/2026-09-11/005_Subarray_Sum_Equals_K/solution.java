@@ -6,3 +6,6 @@ class Solution {
 
         for (int n : nums) {
             total += n;
+            if (subNum.containsKey(total - k)) {
+                count += subNum.get(total - k);
+            }
