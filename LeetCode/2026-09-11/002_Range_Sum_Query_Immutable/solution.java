@@ -1,1 +1,3 @@
+class NumArray {
 
+    int[] preSum;
