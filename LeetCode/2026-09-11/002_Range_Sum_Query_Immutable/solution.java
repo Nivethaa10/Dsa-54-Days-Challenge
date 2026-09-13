@@ -8,3 +8,4 @@ class NumArray {
     }
     
     public int sumRange(int left, int right) {
+        if (left == 0) return preSum[right];
