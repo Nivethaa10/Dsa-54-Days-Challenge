@@ -5,3 +5,4 @@ class Solution {
         long[] prefixSum = new long[nLen + 1];
         for(int i=0; i < nLen; i++)
             prefixSum[i+1] = prefixSum[i] + nums[i];
+        Deque<Integer> startIdxs = new ArrayDeque<>();
