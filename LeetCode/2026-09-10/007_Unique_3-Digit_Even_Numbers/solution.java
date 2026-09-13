@@ -15,3 +15,7 @@ class Solution {
                     f[j]++; 
                     f[k]++;
                 }
+        return res;
+        
+    }
+}
