@@ -16,3 +16,9 @@ class Solution {
                 }
                 currWeight += weight;
             }
+            if (daysNeeded > days) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
