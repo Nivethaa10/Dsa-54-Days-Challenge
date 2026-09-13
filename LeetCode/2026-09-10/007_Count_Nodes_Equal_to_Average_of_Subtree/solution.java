@@ -10,3 +10,4 @@ class Solution {
         int[] right = dfs(node.right);
         int sum = left[0] + right[0] + node.val;
         int cnt = left[1] + right[1] + 1;
+        if (sum / cnt == node.val) ans++;
