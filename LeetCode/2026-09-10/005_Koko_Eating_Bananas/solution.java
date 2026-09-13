@@ -12,3 +12,8 @@ class Solution {
                 left = mid + 1;
             }
         }
+        return ans;
+    }
+
+    public boolean canFinish(int[] piles, int h, int k) {
+        long hours = 0;
