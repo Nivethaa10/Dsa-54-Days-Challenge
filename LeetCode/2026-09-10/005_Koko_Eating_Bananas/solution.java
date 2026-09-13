@@ -22,3 +22,6 @@ class Solution {
             if (pile % k != 0) hours++;
         }
         return hours <= h;
+        
+    }
+}
