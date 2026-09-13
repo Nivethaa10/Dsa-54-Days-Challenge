@@ -11,3 +11,5 @@ class Solution {
                 shortest = Math.min(shortest, i - startIdxs.poll());
             while(!startIdxs.isEmpty() && prefixSum[i] <= prefixSum[startIdxs.peekLast()])
                 startIdxs.pollLast();
+            startIdxs.add(i);
+        }
