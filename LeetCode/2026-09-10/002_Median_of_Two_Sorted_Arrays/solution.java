@@ -11,3 +11,4 @@ class Solution {
         for (int i = 0; i < m; i++) {
             merged[k++] = nums2[i];
         }
+        Arrays.sort(merged);
