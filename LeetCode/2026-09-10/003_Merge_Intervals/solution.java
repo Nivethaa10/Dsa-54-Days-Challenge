@@ -13,3 +13,6 @@ class Solution {
         }
 
         merged.add(prev);
+        return merged.toArray(new int[merged.size()][]);
+    }
+}
