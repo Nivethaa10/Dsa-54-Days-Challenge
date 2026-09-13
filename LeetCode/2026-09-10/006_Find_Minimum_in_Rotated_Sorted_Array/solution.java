@@ -3,3 +3,4 @@ class Solution {
         int n = nums.length - 1;
         int last = nums[n];
         int left = 0, right = n;
+        int left = 0, right = n;
