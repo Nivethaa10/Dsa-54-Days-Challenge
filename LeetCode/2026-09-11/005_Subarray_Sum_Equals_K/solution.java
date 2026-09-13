@@ -11,3 +11,7 @@ class Solution {
             }
             subNum.put(total, subNum.getOrDefault(total, 0) + 1);
         }
+        return count; 
+        
+    }
+}
