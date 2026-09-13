@@ -8,3 +8,6 @@ class Solution {
         for(int i=0;i<n;i++){
             prefix[i+1]=prefix[i]+nums[i];
         }
+        for(int i=n-2;i>=0;i--){
+            suffix[i]=suffix[i+1]+nums[i];
+        }
