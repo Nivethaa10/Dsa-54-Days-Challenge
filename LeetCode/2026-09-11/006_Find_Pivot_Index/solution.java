@@ -16,3 +16,7 @@ class Solution {
             int rightsum=suffix[i]-nums[i];
             if(leftsum==rightsum) return i;
         }
+        return -1;
+        
+    }
+}
