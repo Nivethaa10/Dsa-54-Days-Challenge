@@ -7,3 +7,6 @@ class Solution {
             int mid = (left + right) >> 1;      
             if (nums[mid] > last) left = mid + 1;
             else right = mid;
+        }
+
+        return nums[left];
