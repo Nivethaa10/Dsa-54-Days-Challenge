@@ -5,3 +5,6 @@ class NumArray {
         preSum = nums;
         for (int i = 1; i < preSum.length; ++i)
             preSum[i] += preSum[i-1];
+    }
+    
+    public int sumRange(int left, int right) {
