@@ -5,3 +5,6 @@ class Solution {
         int suffix[]=new int [n];
         prefix[0]=0;
         suffix[n-1]=nums[n-1];
+        for(int i=0;i<n;i++){
+            prefix[i+1]=prefix[i]+nums[i];
+        }
