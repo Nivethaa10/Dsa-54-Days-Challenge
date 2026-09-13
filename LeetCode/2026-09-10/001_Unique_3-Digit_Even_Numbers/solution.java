@@ -11,3 +11,7 @@ class Solution {
                     f[k]--;
 
                     if (f[i] >= 0 && f[j] >= 0 && f[k] >= 0) res++;
+                    f[i]++; 
+                    f[j]++; 
+                    f[k]++;
+                }
