@@ -10,3 +10,6 @@ class Solution {
             if(rem<0){
                 rem=(rem+k);
             }
+            if(map.containsKey(rem)){
+                count+=map.get(rem);
+                map.put(rem,map.get(rem)+1);
