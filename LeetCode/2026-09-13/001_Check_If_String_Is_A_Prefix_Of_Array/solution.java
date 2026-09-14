@@ -3,3 +3,4 @@ class Solution {
         String str = "";
         for(String t : words)
             {
+                str += t;
