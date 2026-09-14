@@ -6,3 +6,8 @@ class Solution {
 
             int start = i;
             int end = Math.min(i + k - 1, arr.length - 1);
+            while(start < end){
+
+                char temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
