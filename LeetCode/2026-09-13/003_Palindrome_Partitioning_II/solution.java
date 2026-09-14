@@ -21,3 +21,9 @@ class Solution {
         palindrome = new boolean[n][n];
         dp = new int[n];
         Arrays.fill(dp, -1);
+        for (int len = 1; len <= n; len++) {
+            for (int i = 0, j = i + len - 1; j < n; i++, j++) {
+                if (i == j)
+                    palindrome[i][j] = true;
+                else if (i + 1 == j)
+                    palindrome[i][j] = (s.charAt(i) == s.charAt(j));
