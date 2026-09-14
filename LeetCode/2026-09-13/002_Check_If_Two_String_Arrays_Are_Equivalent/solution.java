@@ -3,3 +3,5 @@ class Solution {
         StringBuilder s1 = new StringBuilder();
         StringBuilder s2 = new StringBuilder();
         for (String s : word1) {
+            s1.append(s);
+        }
