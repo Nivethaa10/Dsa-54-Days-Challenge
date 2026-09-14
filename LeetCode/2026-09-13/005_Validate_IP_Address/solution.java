@@ -8,3 +8,9 @@ class Solution {
         
         return "Neither";
     }
+    private String validateIPV4(String ip){
+        if(ip.charAt(0)=='.' || ip.charAt(ip.length()-1)=='.') return "Neither";
+           
+        String[] component=ip.split("\\.");
+          
+        if(component.length!=4) return "Neither";
