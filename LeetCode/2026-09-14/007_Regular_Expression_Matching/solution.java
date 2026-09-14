@@ -16,4 +16,12 @@ class Solution {
                 char pc = p.charAt(j - 1);
                 if (pc == s.charAt(i - 1) || pc == '.') {
                     dp[i][j] = dp[i - 1][j - 1];
+                } else if (pc == '*') {
+                    dp[i][j] = dp[i][j - 2];
+                    char prev = p.charAt(j - 2);
+                    if (prev == '.' || prev == s.charAt(i - 1)) {
+                        dp[i][j] = dp[i][j] || dp[i - 1][j];
+                    }
                 }
+            }
+        }
