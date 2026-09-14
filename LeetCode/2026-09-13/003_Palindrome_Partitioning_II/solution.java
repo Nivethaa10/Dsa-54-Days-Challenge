@@ -16,3 +16,8 @@ class Solution {
 
         return dp[i] = cuts;
     }
+    public int minCut(String s) {
+        n = s.length();
+        palindrome = new boolean[n][n];
+        dp = new int[n];
+        Arrays.fill(dp, -1);
