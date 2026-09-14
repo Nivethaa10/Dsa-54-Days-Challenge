@@ -16,3 +16,6 @@ class Solution {
             for (int[] b : B) {
                 int dx = b[0] - a[0] + n;
                 int dy = b[1] - a[1] + n;
+                best = Math.max(best, ++cnt[dx][dy]);
+            }
+        }
