@@ -13,3 +13,12 @@ class Solution {
         }
 
         if (matches(count1, count2)) return true;
+
+        for (int i = n1; i < n2; i++) {
+            count2[s2.charAt(i) - 'a']++;
+            count2[s2.charAt(i - n1) - 'a']--;
+            if (matches(count1, count2)) return true;
+        }
+
+        return false;
+    }
