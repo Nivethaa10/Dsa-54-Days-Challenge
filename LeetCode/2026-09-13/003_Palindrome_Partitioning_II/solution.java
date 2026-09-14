@@ -31,3 +31,6 @@ class Solution {
                     palindrome[i][j] = (s.charAt(i) == s.charAt(j) && palindrome[i + 1][j - 1]);
             }
         }
+        return solve(s, 0);
+    }
+}
