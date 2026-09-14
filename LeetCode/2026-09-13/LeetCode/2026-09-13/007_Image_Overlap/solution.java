@@ -12,3 +12,7 @@ class Solution {
         }
         int[][] cnt = new int[2 * n][2 * n];
         int best = 0;
+        for (int[] a : A) {
+            for (int[] b : B) {
+                int dx = b[0] - a[0] + n;
+                int dy = b[1] - a[1] + n;
