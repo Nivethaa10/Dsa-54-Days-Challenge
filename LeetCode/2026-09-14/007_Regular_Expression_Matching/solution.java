@@ -10,3 +10,10 @@ class Solution {
                 dp[0][j] = dp[0][j - 2];
             }
         }
+
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                char pc = p.charAt(j - 1);
+                if (pc == s.charAt(i - 1) || pc == '.') {
+                    dp[i][j] = dp[i - 1][j - 1];
+                }
