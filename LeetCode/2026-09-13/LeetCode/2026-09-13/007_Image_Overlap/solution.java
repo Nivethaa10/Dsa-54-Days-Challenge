@@ -19,3 +19,7 @@ class Solution {
                 best = Math.max(best, ++cnt[dx][dy]);
             }
         }
+        return best;
+        
+    }
+}
