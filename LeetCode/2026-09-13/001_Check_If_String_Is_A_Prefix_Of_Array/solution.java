@@ -5,3 +5,5 @@ class Solution {
             {
                 str += t;
                 if(str.equals(s))return true;
+            }
+        return false;
