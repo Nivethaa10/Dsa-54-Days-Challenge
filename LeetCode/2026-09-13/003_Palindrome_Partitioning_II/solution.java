@@ -27,3 +27,7 @@ class Solution {
                     palindrome[i][j] = true;
                 else if (i + 1 == j)
                     palindrome[i][j] = (s.charAt(i) == s.charAt(j));
+                else
+                    palindrome[i][j] = (s.charAt(i) == s.charAt(j) && palindrome[i + 1][j - 1]);
+            }
+        }
