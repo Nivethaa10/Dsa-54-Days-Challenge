@@ -14,3 +14,8 @@ class Solution {
 
     private void extendPalindrome(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+            count++;
+            left--;
+            right++;
+        }
+    }
