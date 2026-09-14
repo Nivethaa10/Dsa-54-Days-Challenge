@@ -5,3 +5,6 @@ class Solution {
         for (String s : word1) {
             s1.append(s);
         }
+        for (String s : word2) {
+            s2.append(s);
+        }
