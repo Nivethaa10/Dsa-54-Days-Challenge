@@ -14,3 +14,11 @@ class Solution {
         String[] component=ip.split("\\.");
           
         if(component.length!=4) return "Neither";
+        for(String comp:component){
+            if(comp.length()==0 || comp.length()>3 || (comp.charAt(0)=='0' && comp.length()>1)){
+                return "Neither";
+            }
+               
+            for(char ch:comp.toCharArray()){
+                if(ch<'0' || ch>'9') return "Neither";
+            }
