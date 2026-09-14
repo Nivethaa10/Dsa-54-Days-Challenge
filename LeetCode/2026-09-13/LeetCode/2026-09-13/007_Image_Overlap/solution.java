@@ -10,3 +10,5 @@ class Solution {
                 if (img2[i][j] == 1) B.add(new int[]{i, j});
             }
         }
+        int[][] cnt = new int[2 * n][2 * n];
+        int best = 0;
