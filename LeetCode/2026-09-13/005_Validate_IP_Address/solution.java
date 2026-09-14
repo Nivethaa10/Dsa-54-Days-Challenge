@@ -29,3 +29,12 @@ class Solution {
            
         return "IPv4";
     }
+    private String validateIPV6(String ip){
+        if(ip.charAt(0)==':' || ip.charAt(ip.length()-1)==':') return "Neither";
+       
+        String[] component=ip.split(":");
+       
+        if(component.length!=8) return "Neither";
+       
+        for(String comp:component){
+            if(comp.length()==0 || comp.length()>4) return "Neither";
