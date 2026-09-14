@@ -8,3 +8,11 @@ class Solution {
 
         if (dp[i] != -1)
             return dp[i];
+        int cuts = n - 1;
+
+        for (int j = i; j < n; j++)
+            if (palindrome[i][j])
+                cuts = Math.min(cuts, 1 + solve(s, j + 1));
+
+        return dp[i] = cuts;
+    }
