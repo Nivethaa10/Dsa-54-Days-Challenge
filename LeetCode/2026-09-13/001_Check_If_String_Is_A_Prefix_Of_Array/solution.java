@@ -7,3 +7,5 @@ class Solution {
                 if(str.equals(s))return true;
             }
         return false;
+    }
+}
