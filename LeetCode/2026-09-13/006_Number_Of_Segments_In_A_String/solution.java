@@ -6,3 +6,6 @@ class Solution {
                (i == 0 || s.charAt(i - 1) == ' ')) {
                 count++;
             }
+        }
+
+        return count;
