@@ -14,3 +14,6 @@ class Solution {
                 start++;
                 end--;
             }
+        }
+
+        return new String(arr);
