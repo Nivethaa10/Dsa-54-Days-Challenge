@@ -3,3 +3,9 @@ class Solution {
         int n = s.length();
         for (int len = n / 2; len >= 1; len--) {
             if (n % len == 0) {
+                String sub = s.substring(0, len);
+                StringBuilder sb = new StringBuilder();
+                int times = n / len;
+                for (int i = 0; i < times; i++) {
+                    sb.append(sub);
+                }
