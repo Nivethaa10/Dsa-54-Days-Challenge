@@ -11,3 +11,7 @@ class Solution {
                 repeated.add(sub);
             }
         }
+
+        return new ArrayList<>(repeated);
+    }
+}
