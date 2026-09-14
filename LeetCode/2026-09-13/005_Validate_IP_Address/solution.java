@@ -22,3 +22,10 @@ class Solution {
             for(char ch:comp.toCharArray()){
                 if(ch<'0' || ch>'9') return "Neither";
             }
+            int num=Integer.parseInt(comp);
+            if(num<0 || num>255) return "Neither";
+               
+        }
+           
+        return "IPv4";
+    }
