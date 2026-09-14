@@ -4,3 +4,4 @@ class Solution {
         for(String t : words)
             {
                 str += t;
+                if(str.equals(s))return true;
