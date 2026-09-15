@@ -10,3 +10,4 @@ class Solution {
 // step 4: method stub added
 // step 5: method body comment added
 // step 6: method closed
+// step 7: class closed
