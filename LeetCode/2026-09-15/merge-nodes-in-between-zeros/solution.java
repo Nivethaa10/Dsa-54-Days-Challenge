@@ -12,3 +12,4 @@ class Solution {
 // step 6: method closed
 // step 7: class closed
 // step 8: trailing newline added
+// step 1: created file
