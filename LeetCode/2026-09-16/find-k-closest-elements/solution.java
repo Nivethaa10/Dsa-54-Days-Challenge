@@ -18,3 +18,4 @@ class Solution {
 // step 5: method body comment added
 // step 6: method closed
 // step 7: class closed
+// step 8: trailing newline added
