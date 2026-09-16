@@ -8,3 +8,4 @@ class Solution {
 // step 3: placeholder comment added
 // step 4: method stub added
 // step 5: method body comment added
+// step 6: method closed
